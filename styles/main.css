@@ -122,4 +122,12 @@ footer {
   font-size: .9rem;
   color: #1DC37C;
 }
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #1DC37C;
+}
 /*# sourceMappingURL=main.css.map */
