@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background: #1E2631;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+input, select {
+  background: #252E3F;
+  padding: .5rem .75rem;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  border: none;
+}
+
+input:focus, select:focus {
+  outline: 3px solid rgba(29, 195, 124, 0.2);
+}
+
+button {
+  background: #1DC37C;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: .5rem .75rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #20d98a;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+section {
+  padding-top: 2rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 95%;
+  margin-bottom: 1.5rem;
+}
+
+h1 span {
+  display: block;
+  color: #1DC37C;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.inputs {
+  border-top: 1px solid #fff;
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+@media (max-width: 450px) {
+  .inputs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.inputs-item {
+  position: relative;
+}
+
+.inputs-item.copied::after {
+  content: '\f058';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #1DC37C;
+}
+
+.inputs-item input {
+  width: 100%;
+}
+
+footer {
+  padding-top: 2rem;
+  font-size: .9rem;
+  color: #1DC37C;
+}
+/*# sourceMappingURL=main.css.map */

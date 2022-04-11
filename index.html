@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer ></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Gerador de <span>senhas aleatórias</span></h1>
+                <p>Acabou a sua desculpa para continuar usando senha fracas.</p>
+                <label>
+                    Tamanho:
+                    <select id="sel-strong">
+                        <option value="6">6</option>
+                        <option selected value="8">8</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="24">24</option>
+                    </select>
+                </label>
+                <button id="btn-generate"><i class="fa-solid fa-bolt"></i> Gerar senhas</button>
+            </div>
+        </section>
+        <section >
+            <div class="container">
+                <div class="inputs">
+                    <div class="inputs-item">
+                        <input type="text" spellcheck="false">
+                    </div>
+                    <div class="inputs-item">
+                        <input type="text" spellcheck="false">
+                    </div>
+                    <div class="inputs-item">
+                        <input type="text" spellcheck="false">
+                    </div>
+                    <div class="inputs-item">
+                        <input type="text" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="col">Gerador de senhas &copy; 2022</div>
+        </div>
+    </footer>
+</body>
+</html>
